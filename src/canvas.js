@@ -25,7 +25,7 @@ window.onload = function() // to load an app on opening the page (HTML)
 
 
         //Touch interactions : src http://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
-        // Set up touch events for mobile, etc
+        // Add listeners for touch events
         canvas.addEventListener("touchstart", function (e) {
           var touch = e.touches[0];
           e.preventDefault();
@@ -65,7 +65,7 @@ window.onload = function() // to load an app on opening the page (HTML)
             mousedown = false;
         });
 
-
+        //Mousemove
         $(canvas).on('mousemove', function(e) {
             mousex = parseInt(e.clientX-canvasx);
             mousey = parseInt(e.clientY-canvasy);
